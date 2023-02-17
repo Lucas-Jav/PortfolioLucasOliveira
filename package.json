@@ -4,7 +4,7 @@
   "description": "portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sassM": "npx sass --watch src/scss/style.scss:src/css/style.css --style compressed"
   },
   "author": "lucas oliveira",
   "license": "ISC"
