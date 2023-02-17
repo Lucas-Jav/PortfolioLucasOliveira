@@ -4,8 +4,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 button {
     all: unset;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient($color-1, $color-2);
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-1;
+        border-radius: 5px;
+        outline: 1px solid slategrey;
+    }
 }
