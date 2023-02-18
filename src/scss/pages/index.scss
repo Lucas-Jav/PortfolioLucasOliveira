@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -112,13 +112,7 @@ section {
 }
 
 /* Hide the default checkbox */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
+
 
 .container {
     display: flex;
@@ -130,38 +124,46 @@ section {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
 
-.checkmark {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 1.3em;
-    width: 1.3em;
-}
+    button {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
 
-.checkmark span {
-    width: 32px;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
+    .checkmark {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 1.3em;
+        width: 1.3em;
 
-.checkmark span:nth-child(1) {
-    top: 10%;
-}
+        span {
+            width: 32px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
 
-.checkmark span:nth-child(2) {
-    top: 50%;
-}
-
-.checkmark span:nth-child(3) {
-    top: 90%;
+        span:nth-child(1) {
+            top: 10%;
+        }
+        
+        span:nth-child(2) {
+            top: 50%;
+        }
+        
+        span:nth-child(3) {
+            top: 90%;
+        }
+    }
 }
 
 
@@ -233,14 +235,38 @@ div.menu-modal {
     padding: 100px;
     background: $bg-rx;
 
+    @media (max-width: 652px) {
+        padding: 100px 30px;
+    }
+
     h2 {
-        font-size: 3.5em;
+        font-size: 3em;
         margin-bottom: 10px;
         color: $white;
     }
 
     p {
+        width: 800px;
         font-size: 1em;
         color: $white;
+        margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            text-align: justify;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        padding: 6px 40px;
+        color: $white;
+        border-radius: 20px;
+        border: 1px solid $white;
+        
+        &:hover {
+            background-color: $white;
+            color: $color-1;
+        }
     }
 }
