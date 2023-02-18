@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="./src/js/index.js" defer type="module"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Lucas Oliveira</title>
 </head>
 
 <body>
     <div class="menu-modal">
-        
+
     </div>
     <header>
         <a href="#" class="logo">Lucas</a>
         <ul id="nav">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contract">Contract</a></li>
         </ul>
@@ -27,75 +29,94 @@
         <img src="./src/assets/stars.png" alt="stars-img" loading="lazy" id="stars">
         <img src="./src/assets/moon.png" alt="moon-img" loading="lazy" id="moon">
         <img src="./src/assets/mountains_behind.png" alt="mountains_behind-img" loading="lazy" id="mountains_behind">
-        <h2 id="text">Portfólio</h2>
+        <h2 id="text">Bem Vindo</h2>
         <a href="#sec" id="btn">Explore</a>
         <img src="./src/assets/mountains_front.png" alt="mountains_front-img" loading="lazy" id="mountains_front">
     </section>
-    <div class="containerAll">
-        <div class="sec" id="sec">
-            <h2 id="about">About-me</h2>
-            <p>Olá, meu nome é Lucas Oliveira, tenho 18 anos, atualmente trabalho com Desenvolvimento Web,
-            mais focado no Front-End, porém meu sonho de ser Full-Stack só está no começo! Fazem dois
-            anos que estudo tecnologia, um curso de Desenvolvedor Full-Stack em andamento faltando apenas 40% para concluir, e neste ano de 2023 dei inicio
-            ao meu Bacharelado em Ciências da Computação.
+    <div class="containerAll" id="sec">
+        <div class="sec" id="about">
+            <h2 data-aos="fade-up" data-aos-duration="1000">About</h2>
+            <p data-aos="fade-up" data-aos-duration="1100">Olá, meu nome é Lucas Oliveira, tenho 18 anos, sou um
+                desenvolvedor Front-End baseado em Minas Gerais, no Brasil! Posso desenvolver sites responsivos a partir
+                do zero e transformá-los em experiências web modernas e fáceis de usar.
             </p>
-            <a href="./src/assets/Lucas oliveira.pdf" target="_blank">Cv</a>
+            <p data-aos="fade-up" data-aos-duration="1200">Transformar minha criatividade e conhecimento em sites tem sido minha paixão há muito tempo. Fazem dois
+                anos que estudo tecnologia, um curso de Desenvolvedor Full-Stack em andamento faltando apenas 40% para
+                concluir, e neste ano de 2023 dei inicio ao meu Bacharelado em Ciências da Computação.</p>
+            <a href="./src/assets/Lucas oliveira.pdf" target="_blank" data-aos="fade-up" data-aos-duration="1300">Cv</a>
         </div>
-        <div class="sec">
-            <h2 id="about">Skills</h2>
-            <p>Durante minha caminhada desenvolvi habilidades
+        <div class="sec" id="skills">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Skills</h2>
+            <p data-aos="fade-up" data-aos-duration="1100">Durante minha caminhada desenvolvi habilidades
                 com diversas linguagens de programação e marcação
                 de hipertexto, porém as que tive um melhor
                 resultado são as apresentadas no campo abaixo.
             </p>
-            <div class="contentAbilidades">
+            <div class="contentAbilidades" data-aos="fade-up" data-aos-duration="1200">
                 <legend>Tecnologias:</legend>
                 <div class="content1">
                     <p class="html">HTML</p>
                     <p class="html">90%</p>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%; background-color: orangered;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: orangered;" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
                 <div class="content1">
                     <p class="css">CSS</p>
                     <p class="css">90%</p>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%; background-color: rgb(27, 100, 226);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: rgb(27, 100, 226);" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
                 <div class="content1">
                     <p class="js">JavaScript</p>
                     <p class="js">65%</p>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 65%; background-color: yellow;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 65%; background-color: yellow;" aria-valuenow="65" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
                 <div class="content1">
                     <p class="scss">Scss</p>
                     <p class="scss">95%</p>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 95%; background-color: violet;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 95%; background-color: violet;" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
                 <div class="content1">
                     <p class="botstr">Bootstrap</p>
                     <p class="botstr">90%</p>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%; background-color: purple;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: purple;" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
                 <div class="content1">
                     <p class="botstr">Git & GitHub</p>
                     <p class="botstr">90%</p>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%; background-color: rgb(0, 0, 0);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: rgb(0, 0, 0);" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
             </div>
-            <button id="wakatimeShow">Wakatime</button>
+            <button id="wakatimeShow" data-aos="fade-up" data-aos-duration="1200">Wakatime</button>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -244,6 +244,16 @@ div.menu-modal {
             background-color: $white;
             border-radius: 5px;
             overflow-y: scroll;
+            animation: fadeIn 2s forwards;
+
+            @keyframes fadeIn {
+                0% {
+                    transform: translateY(1000px);
+                }
+                100% {
+                    transform: translateY(0px);
+                }
+            }
 
             @media (max-width: 768px) {
                 width: 100%;
@@ -330,6 +340,12 @@ div.containerAll {
         flex-direction: column;
         position: relative;
         padding: 100px;
+
+        &::after {
+            content: '}';
+            font-size: 3em;
+            color: $white;
+        }
         
     
         @media (max-width: 652px) {
@@ -340,6 +356,15 @@ div.containerAll {
             font-size: 3em;
             margin-bottom: 10px;
             color: $white;
+
+            &::after {
+                content: ') => {';
+                
+            }
+
+            &::before {
+                content: '(';
+            }
         }
     
         p {

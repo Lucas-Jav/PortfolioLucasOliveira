@@ -11,6 +11,7 @@ export function showMenu() {
         <ul>
             <li><a href="#home" class="close">Home</a></li>
             <li><a href="#about" class="close">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#work" class="close">Work</a></li>
             <li><a href="#contract" class="close">Contract</a></li>
         </ul>`
