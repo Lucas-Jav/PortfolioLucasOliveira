@@ -239,14 +239,16 @@ div.menu-modal {
         align-items: center;
 
         div.modal {
-            width: 600px;
-            height: 700px;
+            width: 800px;
+            height: 850px;
             background-color: $white;
             border-radius: 5px;
             overflow-y: scroll;
 
-            @media (max-width: 489px) {
-                height: 400px;
+            @media (max-width: 768px) {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
             }
 
             &::-webkit-scrollbar {

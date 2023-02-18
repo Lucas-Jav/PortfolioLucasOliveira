@@ -20,7 +20,7 @@ export function showWakatime() {
     bodyModal.classList.add('bodyModal');
     bodyModal.innerHTML = `
     <h4>Tecnologias:</h4>
-    <figure><embed src="https://wakatime.com/share/@Luk1/2dddb80a-d90d-44d1-b7b2-ef1a683a4c58.svg"></embed></figure>
+    <figure><embed src="https://wakatime.com/share/@Luk1/2c86a489-effd-419a-81ab-fe20f265958c.svg"></embed></figure>
     <h4>Total de Horas:</h4>
     <figure><embed src="https://wakatime.com/share/@Luk1/a0e989cc-36cf-4d21-9a63-a811e4dcbd1e.svg"></figure>
     <div class="showMore">
