@@ -1,4 +1,5 @@
 import { showMenu } from "./components/menu-navbar.js";
+import { showWakatime } from "./components/modal-wakatime.js";
 
 const body = document.querySelector('body');
 
@@ -45,6 +46,11 @@ window.addEventListener('scroll', () => {
     btn.style.marginTop = `${value * 1.5}px`;
 });
 
+const btnWakatime = document.querySelector('#wakatimeShow');
 
+btnWakatime.addEventListener('click', () => {
+    const divBg = document.querySelector('.menu-modal');
+    divBg.style.display = 'flex';
 
-console.log(document.querySelectorAll('a.close'))
+    showWakatime();
+})
