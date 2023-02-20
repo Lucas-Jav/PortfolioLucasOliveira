@@ -56,11 +56,22 @@ btnWakatime.addEventListener('click', () => {
     divBg.style.display = 'flex';
 
     showWakatime(1);
-})
+});
 
 btnGitHub.addEventListener('click', () => {
     const divBg = document.querySelector('.menu-modal');
     divBg.style.display = 'flex';
 
     showWakatime(2);
-})
+});
+
+
+window.onload = setTimeout(() => {
+    const loadPage = document.querySelector('.onLoadPage');
+    loadPage.classList.add('opacityOut');
+    setTimeout(() => {
+        loadPage.remove();
+    }, 1000);
+}, 1700);
+
+
