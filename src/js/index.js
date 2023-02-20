@@ -49,10 +49,18 @@ window.addEventListener('scroll', () => {
 });
 
 const btnWakatime = document.querySelector('#wakatimeShow');
+const btnGitHub = document.querySelector('#gitHubShow');
 
 btnWakatime.addEventListener('click', () => {
     const divBg = document.querySelector('.menu-modal');
     divBg.style.display = 'flex';
 
-    showWakatime();
+    showWakatime(1);
+})
+
+btnGitHub.addEventListener('click', () => {
+    const divBg = document.querySelector('.menu-modal');
+    divBg.style.display = 'flex';
+
+    showWakatime(2);
 })
